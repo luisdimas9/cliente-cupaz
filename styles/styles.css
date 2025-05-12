@@ -1,0 +1,262 @@
+/* reset mínimo */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body, html { 
+  height: 100%; 
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../assets/image/hand-painted.avif');
+  background-size: cover;
+  background-position: center; 
+}
+
+/* Asegúrate de que el CSS esté correctamente configurado */
+.row.no-margin {
+  margin: 0;
+}
+
+.sidenav {
+  width: 240px !important;
+}
+
+/* styles.css */
+.push-sidenav {
+  margin-left: 240px;
+}
+
+.sidenav a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidenav-fixed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.main-content {
+  margin-left: 240px !important;
+  background: rgba(252, 252, 252, 0.458);
+  padding: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
+.login-container {
+  display: flex;
+  height: 80%;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ========== LEFT FORM ========== */
+.login-form-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #0a015b;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.azul{
+  background: linear-gradient(90deg, #040024, #0a015b);
+}
+
+.text-azul{
+  color: #0a015b;
+}
+
+/* Ajustes para inputs Materialize */
+.input-field {
+  margin-bottom: 24px;
+}
+
+.input-field .material-icons.prefix {
+  color: #0a015b;
+}
+
+.input-field input.validate {
+  border-bottom: 1px solid #ddd !important;
+  box-shadow: none !important;
+  padding: 14px 0 2px 40px;
+  border-radius: 50px;
+  background: #fff;
+}
+
+.input-field input:focus + label,
+.input-field input:not(:placeholder-shown) + label {
+  color: #0a015b !important;
+}
+
+.input-field input:focus {
+  border-bottom: 1px solid #0a015b !important;
+  box-shadow: 0 1px 0 0 #0a015b !important;
+}
+.material-icons.prefix:focus{
+  color: #0a015b;
+}
+
+/* Botón */
+.btn-signin {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #040024, #0a015b);
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.btn-signin:hover {
+  opacity: 0.9;
+}
+
+.btn-uni {
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #040024, #0a015b);
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+
+.sign-up {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.sign-up a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.or-separator span {
+  padding: 0 12px;
+  background: #fff;
+}
+
+.or-separator::before,
+.or-separator::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.social-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #0a015b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.social-btn i { color: #f5f5f5; }
+
+.social-btn.facebook:hover   { background: #3b5998; color: #fff; }
+.social-btn.twitter:hover    { background: #1da1f2; color: #fff; }
+.social-btn.google:hover     { background: #db4437; color: #fff; }
+.social-btn.linkedin:hover   { background: #0077b5; color: #fff; }
+
+/* ========== RIGHT IMAGE ========== */
+.background-column {
+  flex: 1;
+  position: relative;
+  background-image: url('../assets/image/cuadrantes.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.background-column .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 1, 85, 0.458);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.background-column h2 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+.background-column p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .background-column { display: none; }
+  .login-container { border-radius: 0; }
+}
+
